@@ -2,8 +2,19 @@
 const botaoMenu = document.querySelector(".menu-icon");
 const menusMobile = document.querySelectorAll(".menu-mobile");
 
+// Abre/fecha menu ao clicar no ícone
 botaoMenu.addEventListener("click", () => {
     menusMobile.forEach(menu => menu.classList.toggle("active"));
+});
+
+// Fecha menu ao clicar em qualquer link
+menusMobile.forEach(menu => {
+    const links = menu.querySelectorAll("a");
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    });
 });
 
 // FILTRAR PRODUTOS
