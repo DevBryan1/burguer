@@ -8,151 +8,161 @@
 </head>
 <body>
 
-    <header id="inicio">
-        <div class="container">
-            <div class="logo">
-                <a href="#">BM <span>•</span> Burguer</a>
+<header id="inicio">
+    <div class="container">
+        <div class="logo">
+            <a href="#">BM <span>•</span> Burguer</a>
+        </div>
+        <nav class="menu-desktop">
+            <ul class="leftside">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#search">Burguers</a></li>
+                <li><a href="#produtos">Contato</a></li>
+            </ul>
+            <div class="rightside">
+                <a href="#produtos" class="button">Fazer pedido</a>
             </div>
-            <nav class="menu-desktop">
-                <ul class="leftside">
+
+            <div class="cart-icon">
+                🛒
+                <span id="cart-count">0</span>
+                <div class="cart-dropdown">
+                    <ul class="cart-items"></ul>
+                    <div class="cart-total">
+                    Total: R$<span id="cart-total">0.00</span>
+                    </div>
+                    <div class="cart-actions">
+                        <button id="checkout-btn">Finalizar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu">
+            <div class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="menu-mobile">
+                <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#search">Burguers</a></li>
                     <li><a href="#produtos">Contato</a></li>
                 </ul>
-                <div class="rightside">
-                    <a href="" class="button">Fazer pedido</a>
-                </div>
             </nav>
 
-            <div class="menu">
-                <div class="menu-icon" >
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
+            <div class="cart-icon">
+                🛒
+                <span id="cart-count">0</span>
+                <div class="cart-dropdown">
+                    <ul class="cart-items"></ul>
+                    <div class="cart-total">
+                    Total: R$<span id="cart-total">0.00</span>
+                    </div>
+                    <div class="cart-actions">
+                        <button id="checkout-btn">Finalizar Pedido</button>
+                    </div>
                 </div>
-                <nav class="menu-mobile">
-                    <ul class="leftside">
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#search">Burguers</a></li>
-                        <li><a href="#produtos">Contato</a></li>
-                    </ul>
-                </nav>
             </div>
-
         </div>
-    </header>
 
-    <section class="hero">
-        <div class="container">
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="leftside">
+            <h1>O Hamburger mais delicioso.😋</h1>
+            <p>A primeira hamburgueria virtual que você faz o pedido online e come o burguer através do computador.</p>
+            <a href="#produtos" class="button">Fazer um pedido</a>
+        </div>
+        <div class="rightside">
+            <img src="assets/images/heroBurger.png" alt="Hamburguer">
+        </div>
+    </div>
+</section>
+
+<section class="search" id="search">
+    <div class="container">
+        <div class="title">Pesquise o seu<br/>Hamburguer favorito!</div>
+        <div class="sides">
             <div class="leftside">
-                <h1>O Hamburger mais delicioso.😋</h1>
-                <p>A primeira hamburgueria virtual que você faz o pedido online e come o burguer através do computador.</p>
-                <a href="#" class="button">Fazer um pedido</a>
+                <input type="search" placeholder="Digite o nome do Burguer">
             </div>
             <div class="rightside">
-                <img src="assets/images/heroBurger.png" alt="Hamburguer">
+                <select>
+                    <option value="">Selecionar categoria</option>
+                    <option value="tradicional">Tradicional</option>
+                    <option value="bacon">Bacon</option>
+                    <option value="salad">Salada</option>
+                    <option value="cheese">Cheese</option>
+                </select>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="search" id="search">
-        <div class="container">
-            <div class="title">Pesquise o seu<br/>Hamburguer favorito!</div>
-            <div class="sides">
-                <div class="leftside">
-                    <input type="search" placeholder="Digite o nome do Burguer">
+<main id="produtos">
+    <div class="container">
+        <div class="notFound"></div>
+        <div class="products-grid">
+            <a href="" class="product-item" data-name="Texas Burguer" data-category="tradicional">
+                <div class="warning">Promoção</div>
+                <div class="photo">
+                    <img src="assets/burgers/burger1.png" alt="Burguer 1">
                 </div>
-                <div class="rightside">
-                    <select name="" id="">
-                        <option value="" >Selecionar categoria</option>
-                        <option value="tradicional">Tradicional</option>
-                        <option value="bacon">Bacon</option>
-                        <option value="salad">Salada</option>
-                        <option value="cheese">Cheese</option>
-                    </select>
+                <div class="info">
+                    <div class="product-category">Tradicional</div>
+                    <div class="product-name">Texas Burguer</div>
+                    <div class="product-price">R$25,50</div>
                 </div>
-            </div>
+            </a>
+            <a href="" class="product-item" data-name="Bacon Tasty" data-category="bacon">
+                <div class="photo">
+                    <img src="assets/burgers/burger2.png" alt="Burguer 2">
+                </div>
+                <div class="info">
+                    <div class="product-category">Bacon</div>
+                    <div class="product-name">Bacon Tasty</div>
+                    <div class="product-price">R$35,50</div>
+                </div>
+            </a>
+            <a href="" class="product-item" data-name="Salad Burguer" data-category="salad">
+                <div class="photo">
+                    <img src="assets/burgers/burger3.png" alt="Burguer 3">
+                </div>
+                <div class="info">
+                    <div class="product-category">Salad</div>
+                    <div class="product-name">Salad Burguer</div>
+                    <div class="product-price">R$24,90</div>
+                </div>
+            </a>
+            <a href="" class="product-item" data-name="Cheese Burguer" data-category="cheese">
+                <div class="photo">
+                    <img src="assets/burgers/burger4.png" alt="Burguer4">
+                </div>
+                <div class="info">
+                    <div class="product-category">Cheese</div>
+                    <div class="product-name">Cheese Burguer</div>
+                    <div class="product-price">R$49,90</div>
+                </div>
+            </a>
         </div>
-    </section>
+    </div>
+</main>
 
-    <main id="produtos">
-        <div class="container">
-            <div class="notFound"></div>
-            <div class="products-grid">
-                <a href="" class="product-item" data-name="Texas Burguer" data-category="tradicional">
-                    <div class="warning">Promoção</div>
-                    <div class="photo">
-                        <img src="assets/burgers/burger1.png" alt="Burguer 1">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">Tradicional</div>
-                        <div class="product-name">Texas Burguer</div>
-                        <div class="product-price">R$25,50</div>
-                    </div>
-                </a>
-                  <a href="" class="product-item" data-name="Bacon Tasty" data-category="bacon">
-                    <div class="photo">
-                        <img src="assets/burgers/burger2.png" alt="Burguer 2">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">Bacon</div>
-                        <div class="product-name">Bacon Tasty</div>
-                        <div class="product-price">R$35,50</div>
-                    </div>
-                </a>
-                  <a href="" class="product-item" data-name="Salad Burguer" data-category="salad">
-                    <div class="photo">
-                        <img src="assets/burgers/burger3.png" alt="Burguer 3">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">Salad</div>
-                        <div class="product-name">Salad Burguer</div>
-                        <div class="product-price">R$24,90</div>
-                    </div>
-                </a>
-                  <a href="" class="product-item" data-name="Cheese Burguer" data-category="cheese">
-                    <div class="photo">
-                        <img src="assets/burgers/burger4.png" alt="Burguer4">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">Cheese</div>
-                        <div class="product-name">Cheese Burguer</div>
-                        <div class="product-price">R$49,90</div>
-                    </div>
-                </a>
-                  <a href="" class="product-item" data-name="Texas Burguer" data-category="tradicional">
-                    <div class="photo">
-                        <img src="assets/burgers/burger1.png" alt="Burguer 5">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">Tradicional</div>
-                        <div class="product-name">Texas Burguer</div>
-                        <div class="product-price">R$25,50</div>
-                    </div>
-                </a>
-                  <a href="" class="product-item" data-name="Bacon Tasty" data-category="bacon">
-                    <div class="photo">
-                        <img src="assets/burgers/burger2.png" alt="Burguer 6">
-                    </div>
-                    <div class="info">
-                        <div class="product-category">Bacon</div>
-                        <div class="product-name">Bacon Tasty</div>
-                        <div class="product-price">R$35,50</div>
-                    </div>
-                </a>
-            </div>
+<footer>
+    <div class="container">
+        <div class="logo">
+            <a href="#">BM <span>•</span> Burguer</a>
         </div>
-    </main>
+        <div class="copyrights">
+            criado por <a href="https://www.linkedin.com/in/bryan-mello-1401b037a/" target="_blank">Bryan Mello</a>.
+        </div>
+    </div>
+</footer>
 
-    <footer>
-        <div class="container">
-            <div class="logo">
-                <a href="#">BM <span>•</span> Burguer</a>
-            </div>
-            <div class="copyrights">criado por <a href="https://www.linkedin.com/in/bryan-mello-1401b037a/" target="_blank">Bryan Mello</a>.</div>
-        </div>
-    </footer>
-    
-    <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
