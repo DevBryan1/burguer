@@ -1,0 +1,5 @@
+{
+    "emmet.includeLanguages": {
+        "\"emmet.includeLanguages\": {     \"javascript\": \"javascriptreact\",     \"plaintext\": \"html\",     \"css\": \"css\",     \"html\": \"html\" }": ""
+    }
+}
