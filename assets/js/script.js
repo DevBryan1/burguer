@@ -145,6 +145,7 @@ function addToCart(name, price, img) {
     }
 
     updateCartDisplay();
+    alert("Pedido adicionado ao carrinho!");
 }
 
 // ========================
